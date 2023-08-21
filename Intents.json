@@ -1,0 +1,60 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "hello", 
+                "hi", 
+                "wake up", 
+                "hey", 
+                "Leon", 
+                "are you there"
+            ],
+            "responses": [
+                "Hello Sir",
+                "how are you sir",
+                "Always available at your service", 
+                "Hello", 
+                "Here's your assistant"
+            ]
+        },
+
+        {
+            "tag": "breakup",
+            "patterns": [
+                "bye",
+                "good bye",
+                "see you later",
+                "sleep",
+                "exit",
+                "let's talk tomorrow"
+            ],
+            "responses": [
+                "Bye",
+                "See you later",
+                "It will be nice to meet you again",
+                "Bye sir",
+                "Okay bye"
+            ]
+        },
+
+        {
+            "tag": "health",
+            "patterns": [
+                "how are you",
+                "are you fine",
+                "are you alright",
+                "are you good",
+                "is it okay",
+                "feeling good"
+            ],
+            "responses": [
+                "fine",
+                "perfect",
+                "cool",
+                "Same like you",
+                "Yeah fine"
+            ]
+        }        
+    ]
+}
