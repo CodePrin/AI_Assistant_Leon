@@ -29,9 +29,11 @@ Name = "Leon"
 
 from Listen import listen
 from Speak import say
+from Task import non_input_execution, input_execution
 
 def main():
     sentence = listen()
+    result = str(sentence)
 
     if sentence == "bye":
         exit()
@@ -52,8 +54,20 @@ def main():
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 reply = random.choice(intent["responses"])
-                say(reply)
 
-main()
+                if "time" in reply:
+                    non_input_execution(reply)
+                elif "date" in reply:
+                    non_input_execution(reply)
+                elif "day" in reply:
+                    non_input_execution(reply)
+                elif "wikipedia" in reply:
+                    input_execution(reply, result)
+                elif "google" in reply:
+                    input_execution(reply, result)
+                else:
+                    say(reply)
 
+while True:
+    main()
 

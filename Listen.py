@@ -6,7 +6,7 @@ def listen():
     with sr.Microphone() as source:
         print("Listening...")
         r.pause_threshold = 1
-        audio = r.listen(source, 0, 5) # This means that after 5 seconds it will start recognizing it.
+        audio = r.listen(source, 0, 10) # This means that after 5 seconds it will start recognizing it.
 
     try:
         print("Recognizing...")
@@ -19,6 +19,5 @@ def listen():
     query = str(query)
     return query.lower()
 
-listen()
 
 
